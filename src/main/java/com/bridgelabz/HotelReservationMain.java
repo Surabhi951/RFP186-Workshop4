@@ -17,4 +17,5 @@ public class HotelReservationMain {
         String checkOutDate = sc.nextLine();
         Hotel cheapestHotel = hotelReservationService.getCheapestHotel(checkInDate, checkOutDate);
         System.out.println("Cheapest Hotel: " + cheapestHotel.getName() + ", Total Cost: " + cheapestHotel.getTotalCost()); }
+
 }

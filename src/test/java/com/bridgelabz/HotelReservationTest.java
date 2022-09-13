@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 
 public class HotelReservationTest {
     static HotelReservationService hotelReservationService;
-
     @BeforeAll
     static void initialize() {
         hotelReservationService = new HotelReservationService();
