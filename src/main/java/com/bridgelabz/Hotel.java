@@ -27,7 +27,6 @@ public class Hotel {
     public long getTotalCost() {
         return totalCost;
     }
-
     public void setTotalCost(long totalCost) {
         this.totalCost = totalCost;
     }
