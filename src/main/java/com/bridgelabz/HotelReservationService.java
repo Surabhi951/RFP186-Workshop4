@@ -8,8 +8,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class HotelReservationService {
+
     List<Hotel> hotelList = new ArrayList<>();
-    boolean addHotel(Hotel hotel){
+
+    boolean addHotel(Hotel hotel) {
         hotelList.add(hotel);
         return true;
     }
