@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 public class Hotel {
     private final String name;
     private int weekdayRate;
