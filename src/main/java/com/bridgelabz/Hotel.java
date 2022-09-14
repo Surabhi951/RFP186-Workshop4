@@ -9,13 +9,13 @@ public class Hotel {
     private long totalCost;
     boolean isRewardCustomer;
 
-    public Hotel(String name, int weekdayRate, int weekdayRewardedRate, int weekendRate, int weekendRewardedRate, int ratings) {
+    public Hotel(String name, int weekdayRate, int weekdayRewardedRate, int weekendRate, int weekendRewardedRate, int rating) {
         this.name = name;
         this.weekdayRate = weekdayRate;
         this.weekdayRewardedRate = weekdayRewardedRate;
         this.weekendRate = weekendRate;
         this.weekendRewardedRate = weekendRewardedRate;
-        this.ratings = ratings;
+        this.ratings = rating;
     }
 
     public int getWeekdayRate() {

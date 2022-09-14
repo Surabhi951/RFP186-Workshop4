@@ -13,9 +13,7 @@ public class HotelReservationService {
     public enum CustomerType {
         REGULAR, REWARDED
     }
-
     List<Hotel> hotelList = new ArrayList<>();
-
     boolean addHotel(Hotel hotel) {
         hotelList.add(hotel);
         return true;
