@@ -9,7 +9,7 @@ public class HotelReservationTest {
     static void initialize() {
         hotelReservationService = new HotelReservationService();
         hotelReservationService.addHotel(new Hotel("Lakewood", 110, 80, 90, 80, 3));
-        hotelReservationService.addHotel(new Hotel("Bridgewood", 150, 110, 60, 50, 4));
+        hotelReservationService.addHotel(new Hotel("Bridgewood", 160, 110, 60, 50, 4));
         hotelReservationService.addHotel(new Hotel("Ridgewood", 220, 100, 150, 40, 5));
     }
 
