@@ -34,8 +34,14 @@ public class HotelReservationTest {
 
     @Test
     void givenDateRange_ShouldReturn_CheapestBestRatedHotel(){
-        Hotel hotel = hotelReservationService.getCheapestBestRatedHotel("30-05-2022", "31-05-2022");
+        Hotel hotel = hotelReservationService.getCheapestBestRatedHotel("28-05-2022", "29-05-2022");
         Assertions.assertEquals("Bridgewood", hotel.getName());
+    }
+
+    @Test
+    void customerShould_getBestRatedHotel() {
+        Hotel hotel = hotelReservationService.getBestRatedHotel();
+        Assertions.assertEquals("Ridgewood", hotel.getName());
     }
 
 }
