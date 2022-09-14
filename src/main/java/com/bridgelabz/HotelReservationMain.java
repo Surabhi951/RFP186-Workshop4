@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 public class HotelReservationMain {
-    public static void main(String[] args){
+    public static void main(String[] args) throws DateFormatException {
         System.out.println("Welcome to hotel reservation system");
         Scanner sc = new Scanner(System.in);
         HotelReservationService hotelReservationService = new HotelReservationService();
@@ -14,8 +14,8 @@ public class HotelReservationMain {
         String checkInDate = sc.nextLine();
         System.out.println("Enter check-out date: (dd-mm-yyyy)");
         String checkOutDate = sc.nextLine();
-        Hotel cheapestHotel = hotelReservationService.getCheapestBestRatedHotel(checkInDate, checkOutDate, true);
-        System.out.println("Cheapest Hotel: " + cheapestHotel.getName() + ", Ratings : " + cheapestHotel.getRatings() + ", Total Cost: " + cheapestHotel.getTotalCost());
+        Hotel cheapestHotel = hotelReservationService.getCheapestBestRatedHotel(checkInDate, checkOutDate, HotelReservationService.CustomerType.REWARDED);
+        System.out.println("Cheapest Hotel for Rewarded customer: " + cheapestHotel.getName() + ", Ratings : " + cheapestHotel.getRating() + ", Total Cost: " + cheapestHotel.getTotalCost());
     }
 
 }

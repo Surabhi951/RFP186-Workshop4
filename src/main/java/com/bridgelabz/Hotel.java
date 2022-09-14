@@ -34,7 +34,7 @@ public class Hotel {
         this.weekendRate = weekendRate;
     }
 
-    public int getRatings() {
+    public int getRating() {
         return ratings;
     }
 
