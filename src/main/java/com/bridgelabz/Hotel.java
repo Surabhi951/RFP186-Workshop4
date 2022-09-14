@@ -33,4 +33,8 @@ public class Hotel {
     public void setTotalCost(long totalCost) {
         this.totalCost = totalCost;
     }
+
+    public int getRatings() {
+        return ratings;
+    }
 }
